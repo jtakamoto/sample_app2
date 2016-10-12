@@ -1,0 +1,50 @@
+
+<!-- saved from url=(0041)file:///Users/Joji/Downloads/results.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>GIF Search</title>
+
+        <!-- Bootstrap 4 CSS -->
+        <link rel="stylesheet" href="./GIF Search_files/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-static-top navbar-dark bg-inverse">
+            <div class="container">
+                <a class="navbar-brand" href="file:///">Python Project</a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>GIFs tagged with "cats"</h1>
+                <a href="file:///">Back to search</a>
+            </div>
+        </div>
+
+        <!-- GIF Search Results -->
+        <div class="container">
+            <div class="card-columns">
+            {% for result in results %}
+                <div class="card">
+                  <a href="{{ result.media_url }}" target="_blank">
+                    <img class="card-img-top" src="./GIF Search_files/giphy.gif" style="width:100%; height:auto;">
+                </a>
+                </div>
+            {% endfor %}
+                
+            
+            </div>
+        </div>
+
+    
+</body></html>
