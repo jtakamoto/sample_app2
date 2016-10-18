@@ -33,6 +33,7 @@ def results():
     except AssertionError:
         return render_template('nonresults.html')
 
+#This is the 'cool' search results
 @app.route('/coolresults')
 def coolresults():
     #Add 'cool' to search keyword
