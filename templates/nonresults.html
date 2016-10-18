@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Python Project</title>
+        <title>IPP Final Project</title>
         
         <!-- Bootstrap 4 CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
@@ -28,13 +28,19 @@
         <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="container">
-                <h1>About Me</h1>
-                <p>This site was created by Joji and Mathias</p>
+                <!--error message-->
+                <h1>Sorry, we could not find any matching gifs. Please try a new search below</h1>
+                <p>This is the GIF search engine created for the final project of python programming class.</p>
+                <form action="/results" class="form-inline">
+                    <div class="form-group">
+                        <input type="text" name="key" placeholder="Enter keyword for gif" class="form-control">
+                    </div>
+                    <input type="submit" class="btn btn-primary">
+                </form>
             </div>
         </div>
 
-        <div class="container">
-            
+
             <!-- Footer -->
             <hr>
             <footer>

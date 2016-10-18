@@ -1,5 +1,5 @@
 # Intro to Programming with Python
 
-This is a sample application
+This is the final project for IPP
 
-by [Mattan Griffel](http://mattangriffel.com)
+by Joji & Mathias

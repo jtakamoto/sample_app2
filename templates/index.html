@@ -10,13 +10,16 @@
         <!-- Navigation Bar -->
         <nav class="navbar navbar-static-top navbar-dark bg-inverse">
             <div class="container">
-                <a class="navbar-brand" href="/">Python Project</a>
+                <a class="navbar-brand" href="/">IPP Final Project</a>
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jtakamoto/sample_app2.git">GitHub</a>
                     </li>
                 </ul>
             </div>
@@ -25,36 +28,27 @@
         <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="container">
-                <h1>{{ greeting }}</h1>
-                <p>This is the GIF search engine created for the final project of python programming class.</p>
+                <h1>Hello, let me help you find the best GIF!</h1>
+                <p>This is the gif search engine created for the final project of python programming class.</p>
                 <form action="/results" class="form-inline">
                     <div class="form-group">
-                        <input type="text" name="stock" placeholder="Enter keyword for gif" class="form-control">
+                        <!--search box for the user to enter keyword-->
+                        <input type="text" name="key" placeholder="Enter keyword for gif" class="form-control">
+                    </div>
+                    <input type="submit" class="btn btn-primary">
+                </form>
+                <p>Use below if you want 'COOL' resutls</p>
+                <form action="/coolresults" class="form-inline">
+                    <div class="form-group">
+                        <!--search box for the user to enter keyword-->
+                        <input type="text" name="coolkey" placeholder="Enter keyword for gif" class="form-control">
                     </div>
                     <input type="submit" class="btn btn-primary">
                 </form>
             </div>
         </div>
 
-        <div class="container">
-            <!-- Columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                    <p><a class="btn btn-secondary">View details</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                    <p><a class="btn btn-secondary">View details</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                    <p><a class="btn btn-secondary">View details</a></p>
-                </div>
-            </div>
+        
             
             <!-- Footer -->
             <hr>
